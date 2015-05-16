@@ -1,0 +1,42 @@
+body{
+	font-family: Florence, cursive;
+//    background-image: url(https://yandex.ru/images/today?size=2560x1600);
+    background-image: url(img/back.jpg);
+    /* в таком варианте картинка смаштабируется так, чтобы занять все доступное пространство блока, при этом если нужно она обрежется */
+    background-size: cover; 
+    /* это нужно, чтобы центр картинки был в центре блока, можно регулировать соответственно меняя проценты */
+ //   background-position: 50% 50%; 
+    /* в таком варианте картинка смаштабируется под размеры блока: если что-то не влезает, то будет дырка */
+//	 background-size: 100%; 
+    /* чтобы картинка не замостила собой все доступное пространство блока, т.е. не должна повторяться */
+ /*   background-repeat: no-repeat; */
+}
+
+a{
+	text-decoration: none;
+}
+h1{
+	color: red;
+}
+
+h3{
+	color:#007e7e;
+}
+
+p{
+    color: rgb(85,35,85);
+}
+#footer{
+    font-style: italic;
+    color: black;
+}
+
+#top{
+    position: fixed;
+    right: 10px;
+}
+
+img{
+    height: 200px;
+    width: 300px;
+}
