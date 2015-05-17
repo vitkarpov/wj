@@ -1,4 +1,4 @@
-﻿body{
+body{
 	font-family: Florence, cursive;
   background-image: url(img/back.jpg);
    /* в таком варианте картинка смаштабируется так, чтобы занять все доступное пространство блока, 
@@ -13,8 +13,11 @@
 }
 
 a{
-	text-decoration: none;
+  color: #CB3AF8;
+  font-style: italic;
+  font-size: 15px;
 }
+
 h1{
 	color: red;
 }
@@ -23,28 +26,48 @@ h3{
 	color:#007e7e;
 }
 
+/* Красная строка для каждого абзаца*/
 p{
-    color: rgb(85,35,85);
+    color: #552355;
+    text-indent: 20px;
 }
 
-#footer{
+/*Первая буква подвала черного цвета, курсивом и 25 пикселей*/
+#footer:first-letter {
     font-style: italic;
     color: black;
+    font-size: 25px;
 }
 
-/* чтобы картинка при прокрутке оставалась в правом углу зафксирована */
+/*Подвал черного цвета, курсивом*/
+#footer{
+  color: black;
+  font-style: italic;
+}
+
+/*картинка при прокрутке фиксируется в правом углу*/
 #top{
     position: fixed;
     right: 10px;
 }
 
+/*Скругленные углы всех картинок*/
 img{
-    height: 200px;
-    width: 300px;
+    border-radius: 15px;
 }
 
-/* чтобы картинка увеличивалась при наведенении курсором на странице Продукты*/
+/*картинка увеличивается при наведенении курсором*/
 .big:hover img{
     height: 230px;
     width: 340px;
+}
+
+/*при наведении на ссылку подчеркивание исчезает*/
+a:hover{
+    text-decoration: none;
+}
+
+p:first-letter{
+  color: red; /* Красный цвет первой буквы */
+  font-size: 30px;  /* Увеличен размер первой буквы */
 }

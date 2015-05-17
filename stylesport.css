@@ -1,0 +1,59 @@
+body{
+	font-family: Florence, cursive;
+  background-image: url(img/sport.jpg);
+  background-size: cover; 
+  background-position: 50% 50%;
+}
+
+a{
+  color: #CB3AF8;
+  font-style: italic;
+  font-size: 15px;
+}
+
+h1{
+	color: red;
+}
+
+h3{
+	color:#007e7e;
+}
+
+/* Красная строка для каждого абзаца*/
+p{
+    color: #552355;
+    text-indent: 20px;
+}
+
+#footer{
+    font-style: italic;
+    color: black;
+}
+
+/*картинка при прокрутке фиксируется в правом углу*/
+#top{
+    position: fixed;
+    right: 10px;
+}
+
+img{
+    border-radius: 15px;
+}
+
+/*при наведении на ссылку подчеркивание исчезает*/
+a:hover{
+    text-decoration: none;
+}
+
+/*Первая буква абзаца красного цвета и большого размера*/
+p:first-letter{
+  color: red;
+  font-size: 30px;
+}
+
+/*Первая буква подвала черного цвета, курсивом и 25 пикселей*/
+#footer:first-letter {
+    font-style: italic;
+    color: black;
+    font-size: 25px;
+}
