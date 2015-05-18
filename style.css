@@ -1,5 +1,70 @@
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img,abbr{border:0;}address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}ul li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}legend{color:#000;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}
+
+
+div{
+  border: 1px inset #B7B3B3;
+}
+
+#header img{
+  height: 80px;
+  float: left;
+}
+
+#header{
+  height: 80px;
+}
+
+#menu{
+  height: 30px; 
+  padding: 10px;
+  clear: both;
+}
+
+#leftcontent{
+  float: left;
+  width: 20%;
+  min-height: 800px;
+  border-top: inherit;
+  border-bottom: inherit;
+}
+
+#center{
+  overflow: hidden;
+  min-height: 500px;
+  width: 60%;
+  padding: 10px;
+  border: none;
+  text-align: left;
+}
+
+#center img{
+  padding: 15px;
+  padding-top: 100px;
+  width: 25%;
+}
+
+#center h1{
+  text-align: center;
+}
+
+#leftcontent img{
+  width: 95%;
+  height: 200px;
+  padding: 10px;
+}
+
+#footer{
+  clear: both;
+  height: 50px;
+}
+
+#menu li{
+  display: inline;
+  margin: 10px;
+}
+
 body{
-	font-family: Florence, cursive;
+  font-family: Florence, cursive;
   background-image: url(img/back.jpg);
    /* в таком варианте картинка смаштабируется так, чтобы занять все доступное пространство блока, 
    при этом если нужно она обрежется */
@@ -10,6 +75,7 @@ body{
 /*background-size: 100%; */
      /* чтобы картинка не замостила собой все доступное пространство блока, т.е. не должна повторяться */
       /*   background-repeat: no-repeat; */
+      text-align: center;
 }
 
 a{
@@ -19,30 +85,19 @@ a{
 }
 
 h1{
-	color: red;
+  color: red;
+  font-size: 50px;
 }
 
 h3{
-	color:#007e7e;
+  color:#007e7e;
+  font-size: 30px;
 }
 
 /* Красная строка для каждого абзаца*/
 p{
     color: #552355;
     text-indent: 20px;
-}
-
-/*Первая буква подвала черного цвета, курсивом и 25 пикселей*/
-#footer:first-letter {
-    font-style: italic;
-    color: black;
-    font-size: 25px;
-}
-
-/*Подвал черного цвета, курсивом*/
-#footer{
-  color: black;
-  font-style: italic;
 }
 
 /*картинка при прокрутке фиксируется в правом углу*/
@@ -58,8 +113,7 @@ img{
 
 /*картинка увеличивается при наведенении курсором*/
 .big:hover img{
-    height: 230px;
-    width: 340px;
+    height: 15em;
 }
 
 /*при наведении на ссылку подчеркивание исчезает*/
@@ -67,7 +121,25 @@ a:hover{
     text-decoration: none;
 }
 
-p:first-letter{
+.oldbook p:first-letter{
   color: red; /* Красный цвет первой буквы */
   font-size: 30px;  /* Увеличен размер первой буквы */
+}
+
+
+/*Первая буква подвала черного цвета, курсивом и 25 пикселей*/
+#footer p:first-letter {
+    font-style: italic;
+    color: black;
+    font-size: 25px;
+}
+
+/*Подвал черного цвета, курсивом*/
+#footer p{
+  color: black;
+  font-style: italic;
+}
+
+#center #news{
+  width: 80%;
 }

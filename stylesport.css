@@ -1,8 +1,11 @@
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img,abbr{border:0;}address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}ul li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}legend{color:#000;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}
+
 body{
 	font-family: Florence, cursive;
   background-image: url(img/sport.jpg);
   background-size: cover; 
-  background-position: 50% 50%;
+  background-position: 60% 50%;
+  text-align: center;
 }
 
 a{
@@ -13,10 +16,12 @@ a{
 
 h1{
 	color: red;
+  font-size: 50px;
 }
 
 h3{
 	color:#007e7e;
+  font-size: 30px;
 }
 
 /* Красная строка для каждого абзаца*/
@@ -34,6 +39,11 @@ p{
 #top{
     position: fixed;
     right: 10px;
+}
+
+#menu li{
+  display: inline;
+  margin: 10px;
 }
 
 img{
@@ -57,3 +67,60 @@ p:first-letter{
     color: black;
     font-size: 25px;
 }
+
+div{
+  border: 1px inset #B7B3B3;
+}
+
+#header img{
+  height: 80px;
+  float: left;
+}
+
+#header{
+  height: 80px;
+}
+
+#menu{
+  height: 30px; 
+  padding: 10px;
+  clear: both;
+}
+
+#leftcontent{
+  float: left;
+  width: 20%;
+  min-height: 800px;
+  border-top: inherit;
+  border-bottom: inherit;
+}
+
+#center{
+  overflow: hidden;
+  min-height: 500px;
+  width: 60%;
+  padding: 10px;
+  border: none;
+  text-align: left;
+}
+
+#center img{
+  padding: 15px;
+  padding-top: 100px;
+}
+
+#center h1{
+  text-align: center;
+}
+
+#leftcontent img{
+  width: 95%;
+  height: 400px;
+  padding: 10px;
+}
+
+#footer{
+  clear: both;
+  height: 50px;
+}
+
