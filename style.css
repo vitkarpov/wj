@@ -1,6 +1,15 @@
+/*
+  Вот это лучше выносить в reset.css — отдельный файлик:
+  не стоит это дублировать в каждом файле
+ */
 body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img,abbr{border:0;}address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}ul li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}legend{color:#000;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}
 
-
+/*
+  Такой стиль может сыграть злую шутку: точно нужно все-все дивы подсвечивать рамками?
+  Если это нужно в режиме разработки, то лучше писать .debug div, а для html ставить класс .debug.
+  Если это нужно для раскладки, то лучше рамки ставить именно тем дивам, которым это сейчас нужно,
+  не боясь дублировать этот стиль.
+ */
 div{
   border: 1px inset #B7B3B3;
 }
@@ -10,6 +19,11 @@ div{
   float: left;
 }
 
+/*
+  Высота задана явно, потому что она схлопывается из-за плавающего элемента внутри? (float: left для img внутри header)
+  В таком случае, погугли на эту тему: как сделать так, чтобы высота не схлопывалась.
+  Это важно, потому что завтра внутри шапки появится еще какой-то контент, а у тебя высота захардкожена.
+ */
 #header{
   height: 80px;
 }
@@ -48,12 +62,24 @@ div{
 }
 
 #leftcontent img{
+  /*
+    Вот это не круто:
+    изменится размер блока, внутри которого картинка,
+    изменится ее ширина, а высота фиксированная — в результате,
+    картинка сшлющится по горизонтали, будет некрасиво
+   */
   width: 95%;
   height: 200px;
   padding: 10px;
 }
 
 #footer{
+  /*
+    Вот это не понятно зачем нужно, в данной раскладке:
+    имело бы смысл если бы после сайдбара (с float: left) шел сразу этот блок (с clear: left или clear: both)
+    тогда он бы не расположился справа от сайдара, а встал бы под него
+   (clear — значит очистить поведение float и вернуть в нормальный поток)
+   */
   clear: both;
   height: 50px;
 }
